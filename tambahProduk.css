@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+
+    body{
+        background-color: rgba(239, 239, 239, 1);
+        font-family: 'Poppins';
+        display: block;
+        justify-items: center;
+        align-content: center;
+        animation: animasi-masuk 300ms ease;
+    }
+
+    @keyframes animasi-masuk {
+        0%{
+            opacity: 0;
+        }
+    }
+
+    .title{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(0, 60, 226);
+        color: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.612));
+    }
+
+    .title h2{
+        margin-top: 10%;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .title h2::after{
+        content: "Produk.";
+        position: relative;
+        bottom: 10px;
+        left: 5%;
+    }
+    
+    .backBtn{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+        width: 20%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .backBtn img{
+        width: 25px;
+        height: 25px;
+    }
+}
