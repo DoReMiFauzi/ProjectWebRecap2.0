@@ -1,0 +1,391 @@
+@media (max-width: 768px) {
+    ::scroll-marker{
+        display: none;
+    }
+    
+    *{
+        margin: 0;
+    }
+
+    body{
+        background-color: rgba(239, 239, 239, 1);
+        font-family: 'Poppins';
+        display: block;
+        justify-items: center;
+        align-content: center;
+        animation: animasi-masuk 300ms ease;
+
+    }
+
+    @keyframes animasi-masuk {
+        0%{
+            opacity: 0;
+        }
+    }
+
+    .title{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(0, 60, 226);
+        color: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.612));
+    }
+
+    .title h2{
+        margin-top: 10%;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .title h2::after{
+        content: "Digital.";
+        position: relative;
+        bottom: 5px;
+        left: 4%;
+    }
+    
+    .historyTrxBtn{
+        background-image: url('assets/historyTrxIcon.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+    /* Btn Navigasi */
+    .nav-btn{
+        width: 90%;
+        height: 100px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .create{
+        background-image: url('assets/plus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        height: 80px;
+        width: 80px;
+        background-color: rgba(197, 213, 255, 1);
+        border-radius: 16px;
+    }
+
+    .trx{
+        background-image: url('assets/troli.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        height: 80px;
+        width: 80px;
+        background-color: rgba(197, 213, 255, 1);
+        border-radius: 16px;
+    }
+
+    .history{
+        background-image: url('assets/wallet.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        height: 80px;
+        width: 80px;
+        background-color: rgba(197, 213, 255, 1);
+        border-radius: 16px;
+    }
+
+    /* Btn Detail */
+
+    .detail-wraper{
+        width: 95%;
+        height: 190px;
+        border-radius: 10px;
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        position: relative;
+    }
+
+    .slider-btn{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 9%;
+        background-color: rgba(197, 213, 255, 1);
+        z-index: 1;
+        transition: 500ms ease;
+        border-radius: 50%;
+    }
+
+    .detail-btn{
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        padding-bottom: 4%;
+        z-index: 2;
+    }
+
+    .btn-trx{
+        background-image: url('assets/histori-trx.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+    }
+
+    .btn-omset{
+        background-image: url('assets/histori-omset.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+    }
+
+    .btn-outlet{
+        background-image: url('assets/troli.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+    }
+
+    .btn-external{
+        background-image: url('assets/histori-external.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+    }
+
+    /* Detail Slider */
+
+    .detail{
+        margin-top: 35px; 
+        width: 95%;
+        margin-left: 10px;
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    .detail-slider{
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-trx{
+        margin-left: -5px;
+        width: 335px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wraper-trx{
+        height: 90%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wraper-trx .text{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    .wraper-trx img{
+        height: 40px;
+        margin-right: 3%;
+    }
+
+    .detail-omset{
+        width: 335px;
+        height: 70px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wraper-omset{
+        height: 90%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wraper-omset .text{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    .wraper-omset img{
+        height: 40px;
+        margin-right: 3%;
+    }
+
+    .detail-outlet{
+        width: 335px;
+        height: 70px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wraper-outlet{
+        height: 90%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wraper-outlet .text{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    .wraper-outlet img{
+        height: 40px;
+        margin-right: 3%;
+    }
+
+    .detail-external{
+        width: 335px;
+        height: 70px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+    }    
+    
+    .wraper-external{
+        height: 90%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .wraper-external .text{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    .wraper-external img{
+        height: 40px;
+        margin-right: 3%;
+    }
+
+
+    /* Table History */
+
+    .text-table{
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .text-table h3{
+        font-weight: 500;
+    }
+
+    .text-table p{
+        scale: 1.2;
+    }
+
+    .wrap-table{
+    background-color: white;
+    display: flex;
+    position: relative;
+    padding: 10px 20px 0px 20px;
+    margin-bottom: 5%;
+    width: 84%;
+    border-radius: 12px;
+    padding-bottom: 10px;        
+    background-color: rgba(255, 255, 255, 1);
+    }
+
+    .text-table{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 13%;
+    padding-left: 5px;
+    padding-right: 10px;
+    height: 50px;
+    width: 315px;
+    }
+
+    .text-table h2{
+    font-weight: 600;
+    }
+
+    .text-table p {
+    font-size: 0.8rem;
+    font-style: italic;
+    }
+
+    .wrap-table table{
+    width: 100%;
+    height: 100%;
+    }
+
+    .wrap-table th{
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(202, 202, 202, 1);
+    padding-bottom: 8px;
+    }
+
+    .wrap-table td{
+    padding: 8px 0px;
+    text-align: left;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(202, 202, 202, 1);
+    }
+
+    .wrap-table td:nth-child(4){
+    text-align: center;
+    }
+}

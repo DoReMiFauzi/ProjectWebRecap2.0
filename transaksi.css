@@ -1,0 +1,276 @@
+
+@media (max-width: 768px) {
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+   *{
+        margin: 0;
+    }
+
+    body{
+        background-color: rgba(239, 239, 239, 1);
+        font-family: 'Poppins';
+        display: block;
+        justify-items: center;
+        align-content: center;
+        animation: animasi-masuk 300ms ease;
+        position: relative;
+    }
+
+    @keyframes animasi-masuk {
+        0%{
+            opacity: 0;
+        }
+    }
+
+    .title{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(0, 60, 226);
+        color: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.612));
+    }
+
+    .title h2{
+        margin-top: 10%;
+        margin-right: 5%;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .title h2::after{
+        content: " Produk.";
+        bottom: 10px;
+        left: 18%;
+        position: relative;
+    }
+    
+    .backBtn{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+        gap: 5px;
+        width: 20%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .backBtn img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .search {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search input{
+        font-family: 'Poppins';
+        width: 95%;
+        height: 40px;
+        font-size: 0.9rem;
+        padding-left: 20px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .search input::placeholder{
+        font-style: italic;
+    }
+
+    .produk-wraper{
+        width: 90%;
+        height: 65vh;
+        display: block;
+        overflow-y: scroll;
+    }
+    
+    .produk-slider{
+        height: max-content;
+        display: block;
+        justify-items: center;
+        position: relative;
+        z-index: -1;
+    }
+
+    .produk{
+        height: 70px;
+        width: 85%;
+        padding: 0px 7%;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .produk .title-produk{
+        text-align: left;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .produk .title-produk span:nth-child(2){
+        font-style: italic;
+        color: grey;
+    }
+
+    .produk .btn-action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 26%;
+    }
+
+    .produk .btn-action button{
+        color: white;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        border: none;
+        background-color: grey;
+        border-radius: 3px;
+    }
+
+    .produk .btn-action button:nth-child(3){
+        background-color: rgb(0, 60, 226);
+    }
+    /* Button Transaksi */ 
+    .btn-trx{
+        height: 65px;
+        width: 100%;
+        box-shadow: 1px -5px 9px rgba(0, 0, 0, 0.429);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .btn-trx button{
+        border: none;
+        font-family: 'Poppins';
+        background-color: blue;
+        color: white;
+        font-weight: 500;
+        border-radius: 5px;
+        height: 70%;
+        width: 75%;
+        font-size: 1.2rem;
+    }
+    
+    /* Detail Transaksi */
+
+    .confirmTrx{
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(58, 58, 58, 0.461);
+        position: absolute;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+     .detailTrx{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: block;
+        align-content: center;
+        width: 100%;
+        bottom: 0%;
+        background-color: #fff;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .btn-close{
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        right: 2%;
+        top: 5%;
+    }
+
+    .text-transaksi{
+        font-size: 1.4rem;
+        width: 100px;
+        margin: 0px 0px 3% 10%;
+        padding-top: 25px;
+    }
+
+    .wraper-transaksi{
+        margin: 0px 15%;
+    }
+
+    .detail-qty{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        border-bottom: 1px solid grey;
+    }
+
+    .total{
+        font-weight: bold;
+        margin: 25px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-confirm button{
+        border: none;
+        font-family: 'Poppins';
+        background-color: blue;
+        color: white;
+        margin: 0px 10% 10px;
+        font-weight: 500;
+        border-radius: 5px;
+        height: 45px;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .wraper-notifikasi{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+    }
+
+    .wraper-notifikasi .img-sukses{
+        margin-bottom: 10px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .wraper-notifikasi .text-sukses{
+        font-size: 1.3rem;
+        color: white;
+        font-weight: 500;
+    }
+}

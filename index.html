@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="beranda.css" />
+  </head>
+  <body>
+    <div class="title">
+      <div class="historyTrxBtn" onclick="historyTrx()"></div>
+      <h2>Cahier </h2>
+    </div>
+    <!-- Navigasi Btn -->
+    <div class="nav-btn">
+      <div class="create" id="createBtn"></div>
+      <div class="trx" id="trxBtn"></div>
+      <div class="history" id="historyBtn"></div>
+    </div>
+
+    <!-- Detail Btn -->
+    <div class="detail-wraper">
+        <div class="detail-btn">
+        <div class="slider-btn" id="slider-btn"></div>
+        <div class="btn-trx" id="btn-trx"></div>
+        <div class="btn-omset" id="btn-omset"></div>
+        <div class="btn-outlet" id="btn-outlet"></div>
+        <div class="btn-external" id="btn-external"></div>
+      </div>
+      <!-- Detail Slider  -->
+      <div class="detail" id="detail">
+        <div class="detail-slider">
+          <div class="detail-trx" id="detail-trx">
+            <div class="wraper-trx">
+              <div class="text">
+                <p>jumlah Transaksi</p>
+                <h4>16</h4>
+              </div>
+              <img src="assets/histori-trx.png" alt="">
+            </div>
+          </div>
+          <div class="detail-omset" id="detail-omset">
+            <div class="wraper-omset">
+              <div class="text">
+                <p>Omset Harian</p>
+                <h4>Rp. 530.000</h4>
+              </div>
+              <img src="assets/histori-omset.png" alt="">
+            </div>
+          </div>
+          <div class="detail-outlet" id="detail-outlet">
+            <div class="wraper-outlet">
+              <div class="text">
+                <p>Transaksi Outlet</p>
+                <h4>Rp. 430.000</h4>
+              </div>
+              <img src="assets/troli.png" alt="">
+            </div>
+          </div>
+          <div class="detail-external" id="detail-external">
+            <div class="wraper-external">
+              <div class="text">
+                <p>Transaksi Eksternal</p>
+                <h4>Rp. 130.000</h4>
+              </div>
+              <img src="assets/histori-external.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+
+     <div class="text-table">
+      <h3>Transaksi</h3>
+      <p id="lihatRiwayat" onclick="historyTrx()">See More -></p>
+    </div>
+    <div class="wrap-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>QTY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Susu Gelas</td>
+            <td>8.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Sumur 1L</td>
+            <td>8.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Sumur 1/2L</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+            <td>12-06-2025</td>
+            <td>Sumur Gelas</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Susu 1L</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Susu Gelas</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Susu Gelas</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>12-06-2025</td>
+            <td>Susu Gelas</td>
+            <td>6.000</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    <script src="beranda.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+
+    body{
+        background-color: rgba(239, 239, 239, 1);
+        font-family: 'Poppins';
+        display: block;
+        justify-items: center;
+        align-content: center;
+        animation: animasi-masuk 300ms ease;
+    }
+
+    @keyframes animasi-masuk {
+        0%{
+            opacity: 0;
+        }
+    }
+
+    .title{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(0, 60, 226);
+        color: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.612));
+    }
+
+    .title h2{
+        margin-top: 10%;
+        width: 100px;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .title h2::after{
+        position: relative;
+        content: " Keuangan.";
+        bottom: 5px;
+        right: 15%;
+    }
+    
+    .backBtn{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+        gap: 5px;
+        width: 20%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .backBtn img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .wraper-laporan{
+        display: block;
+        justify-items: center;
+        background-color: #fff;
+        width: 90%;
+        margin-top: 30px;
+        border-radius: 5px;
+        padding: 15px 0px;
+    }
+
+    /* Dropdown */
+
+    .dropdown{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    
+    .dropdown select{
+        border-radius: 5px;
+        width: 100%;
+        height: 35px;
+        padding: 0px 10px 0px 10px;
+        font-family: 'Poppins';
+        outline: none;
+        border: 1px solid grey;
+    }
+
+    .dropdown select option{
+        background-color: #fff;
+        font-size: 1rem;
+        font-family: 'Poppins';
+    }
+
+    /* Detail produk */
+    .laporan{
+        width: 90%;
+        scale: 95%;
+        display: block;
+        justify-items: center;
+    }
+
+    .laporan .title-outlet{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .wraper-online{
+        display: block;
+        justify-items: center;
+        width: 90%;
+    }
+    
+    .title-text{
+        font-size: 1.0.5rem;
+        font-weight: 500;
+    }
+    
+    .detail-produk{
+        text-align: left;
+        width: 90%;
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+    table{
+        width: 100%;
+    }
+    
+    table tbody tr td{
+        border-bottom: 1px solid grey;
+    }
+
+    table tbody tr td:nth-child(3){
+        text-align: right;
+    }
+
+    .total{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .wraper-offline{
+        display: block;
+        justify-items: center;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .total-outlet{
+        width: 70%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+    }
+
+    .total-external{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+    }
+
+    .total-keseluruhan{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        font-weight: 600;
+    }
+}

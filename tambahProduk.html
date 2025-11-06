@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Produk</title>
+    <link rel="stylesheet" href="tambahProduk.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h2>Buat</h2>
+      <div class="backBtn" id="backBtn">
+        <img src="assets/left-arrow.png" alt="" />
+        <p>Back</p>
+      </div>
+    </div>
+
+    <!-- Slider Add Product -->
+    <div class="add-product" id="slider">
+      <div class="add-product-slider">
+        <label class="toggle">
+          <input type="checkbox" id="switch" />
+          <span class="slider"></span>
+        </label>
+        <div class="external"><h1>External.</h1></div>
+        <form class="input-product">
+          <div class="input-nama">
+            <span>Nama Produk</span>
+            <input type="text" />
+          </div>
+          <div class="input-harga">
+            <span>Harga Produk</span>
+            <input type="text" />
+          </div>
+          <div class="metode-trx">
+            <span>Pilih Metode Transaksi</span>
+            <br />
+            <input type="radio" name="metode" id="" /><span>Online</span>
+            <input type="radio" name="metode" id="" /><span>Offline</span>
+          </div>
+          <div class="btn-action">
+            <button><p>Clear</p></button>
+            <button><p>Submit</p></button>
+          </div>
+        </form>
+        <div class="outlet"><h1>Outlet.</h1></div>
+      </div>
+    </div>
+      <!-- Table Produk -->
+    <div class="wrap-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Toko</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Outlet</td>
+            <td>Susu Gelas - Offline</td>
+            <td>8.000</td>
+            <td>
+              <button></button>
+              <button></button>
+            </td>
+          </tr>
+          <tr>
+            <td>Outlet</td>
+            <td>Sumur 1L - Offline</td>
+            <td>8.000</td>
+            <td>
+              <button></button>
+              <button></button>
+            </td>
+          </tr>
+          <tr>
+            <td>Outlet</td>
+            <td>Sumur 1/2L Offline</td>
+            <td>6.000</td>
+            <td>
+              <button></button>
+              <button></button>
+            </td>
+          <tr>
+            <td>External</td>
+            <td>Susu 1L - Online</td>
+            <td>16.000</td>
+            <td>
+              <button></button>
+              <button></button>
+            </td>
+          </tr>
+          <tr>
+            <td>External</td>
+            <td>Susu Gelas - Offline</td>
+            <td>6.000</td>
+            <td>
+              <button></button>
+              <button></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="tambahProduk.js"></script>
+  </body>
+</html>
